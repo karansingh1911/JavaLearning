@@ -6,7 +6,7 @@ import java.util.List;
 
 public class MethodReferenceDemo{
     public static void main(String[] args){
-        List<String> s= Arrays.asList("karan", "Ram", "Rahim");
+        List<String> s= Arrays.asList("karan Singh", "Ram", "Rahim");
         
         List<String> inUpperCase = s.stream()
                         . map(String::toUpperCase) // this gives stream
