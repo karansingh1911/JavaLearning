@@ -1,0 +1,15 @@
+            +-------------------------------------+
+            |   Collections (utility class)       |
+            |   java.util.Collections             |
+            |   🔹 Provides static helper methods  |
+            |   🔹 Works with any Collection type  |
+            +-------------------------------------+
+                       │
+                       ▼
+        Methods like:
+        - sort(List)
+        - reverse(List)
+        - shuffle(List)
+        - min(Collection)
+        - max(Collection)
+        - addAll(Collection, elements...)

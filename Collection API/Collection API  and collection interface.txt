@@ -1,0 +1,32 @@
+                +----------------------------------+
+                |     ☕ Java Collection API        |
+                | (The entire framework in java.util) |
+                +----------------------------------+
+                               │
+        ┌──────────────────────┴──────────────────────┐
+        │                                             │
+        ▼                                             ▼
+ +--------------------+                 +----------------------+
+ |  Collection<E>     |  (interface)    |  Map<K,V>            | (interface)
+ |  (Root interface)  |                 |  (Key-Value pairs)   |
+ +--------------------+                 +----------------------+
+        │                                             │
+        │                                             │
+ ┌──────┼──────────┬───────────┐                      │
+ │      │          │           │                      │
+ ▼      ▼          ▼           ▼                      ▼
+List<E> Set<E>  Queue<E>  Deque<E>                SortedMap<K,V>
+│       │         │           │                      │
+│       │         │           │                      │
+│       │         │           │                      │
+│       │         │           │                      │
+│       │         │           │                      │
+│       │         │           │                      │
+│       │         │           │                      │
+│       │         │           │                      │
+│       │         │           │                      │
+▼       ▼         ▼           ▼                      ▼
+ArrayList HashSet  PriorityQueue  ArrayDeque        TreeMap
+LinkedList TreeSet  LinkedList                     HashMap
+Vector                                            LinkedHashMap
+

@@ -1,0 +1,83 @@
+There are 3 types or errors in Java:
+1. Compile-time Error= also called syntactical error => System.out.Println("");
+2. Logical Error => no error yet expected output/result is different => bugs
+3. Runtime Error => execution Stops due to some external issus...  => Very Imp. to handle especially for production
+
+
+Statements:
+1. Normal
+2. Critical
+
+Workflow
+=> If any issue occurs in try block the catch returns an exception object
+=> The Exception e (meaning e is a object of class Exception) here Exception class is a parent class of all the famous exception child classes like:
+
+🧮 Arithmetic & Number-related exceptions:
+
+Exception	When it happens
+1.ArithmeticException	Divide by zero (int x = 10/0;)
+2.NumberFormatException	Converting invalid string to number (Integer.parseInt("abc"))
+3.InputMismatchException	Wrong type entered in Scanner input (expecting int but entered text)
+
+
+📦 Array and Collection-related
+
+Exception	When it happens
+1.ArrayIndexOutOfBoundsException	Accessing invalid array index
+2.StringIndexOutOfBoundsException	Accessing invalid character index in a String
+3.IndexOutOfBoundsException	General parent class for index-related errors
+4.NullPointerException	Trying to use a null reference
+5.ConcurrentModificationException	Modifying a collection while iterating over it
+
+
+💾 Input / Output exceptions
+
+Exception	When it happens
+1.IOException	General I/O error (reading/writing files, streams)
+2.FileNotFoundException	File doesn’t exist while trying to open it
+3.EOFException	Unexpected end of file reached
+4.MalformedURLException	Invalid URL syntax
+5.SocketException	Network socket-related issues
+
+
+🧠 Class & Reflection-related
+
+Exception	When it happens
+1.ClassNotFoundException	Class not found while loading dynamically
+2.NoClassDefFoundError	JVM couldn’t load a class definition at runtime
+3.InstantiationException	Trying to instantiate an abstract class or interface via reflection
+4.IllegalAccessException	Accessing a class member you don’t have rights to
+5.InvocationTargetException	Exception thrown by a method invoked via reflection
+
+⚙️ Threading & Concurrency
+
+Exception	When it happens
+1.InterruptedException	Thread interrupted while sleeping or waiting
+2.IllegalThreadStateException	Illegal thread operation (like starting a thread twice)
+3.ExecutionException	Exception thrown during concurrent task execution
+
+💬 Runtime / General
+
+Exception	When it happens
+1.IllegalArgumentException	Method received invalid argument
+2.IllegalStateException	Method called at inappropriate time
+3.UnsupportedOperationException	Operation not supported by object
+4.SecurityException	Security manager denies access
+5.RuntimeException	Base class for all unchecked exceptions
+
+
+🧱 Checked Exceptions (must handle)
+
+Exception	Typical use case
+1.SQLException	Database access errors
+2.IOException	Input/Output stream issues
+3.ParseException	Error while parsing formatted data
+4.ClassNotFoundException	When loading classes dynamically
+
+
+💡 Quick rule of thumb:
+
+1.Unchecked exceptions (like ArithmeticException, NullPointerException, ArrayIndexOutOfBoundsException) → extend RuntimeException.
+
+2.Checked exceptions (like IOException, SQLException) → extend Exception but not RuntimeException.
+You must handle or declare checked ones.
