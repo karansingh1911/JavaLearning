@@ -3,7 +3,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-// Comparator is a functional interface, mostly used for doing an operation in order 
+// Comparator is a functional interface, mostly used for doing an operation in a certain order 
 // needs two values, for custom class objects we need to define it by using lambda expression, for Collection API its defined internally
 public class Comparator {
 
