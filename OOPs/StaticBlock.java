@@ -7,7 +7,7 @@ class Mobile{
         System.out.println("Object created");
     }
     static{
-        String catogory ="Smartphone";
+        // String category ="Smartphone";
         System.out.println("class has been loaded in the class Loader - JVM ");  
 
     }
